@@ -4,6 +4,9 @@
     <featureManager>
         <feature>microProfile-2.2</feature>
     </featureManager>
+    
+    <mpMetrics authentication="false"/>
+
 
     <httpEndpoint id="defaultHttpEndpoint"
                   httpPort="${env.default.http.port}"
