@@ -7,6 +7,9 @@
     
     <mpMetrics authentication="false"/>
 
+    <opentracingZipkin host="zipkin"/>
+
+
 
     <httpEndpoint id="defaultHttpEndpoint"
                   httpPort="${env.default.http.port}"
