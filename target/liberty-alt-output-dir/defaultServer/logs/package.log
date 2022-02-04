@@ -1,0 +1,31 @@
+java.lang.RuntimeException: mode '-1' is too big ( > 2097151 ).
+	at org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumber(TarArchiveOutputStream.java:636)
+	at org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumber(TarArchiveOutputStream.java:624)
+	at org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(TarArchiveOutputStream.java:616)
+	at org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.putArchiveEntry(TarArchiveOutputStream.java:369)
+	at com.ibm.ws.kernel.boot.archive.internal.ZipArchive.processEntry(ZipArchive.java:124)
+	at com.ibm.ws.kernel.boot.archive.internal.ZipArchive.addDirEntry(ZipArchive.java:85)
+	at com.ibm.ws.kernel.boot.archive.DirEntryConfig.configure(DirEntryConfig.java:77)
+	at com.ibm.ws.kernel.boot.archive.internal.AbstractArchive.create(AbstractArchive.java:49)
+	at com.ibm.ws.kernel.boot.internal.commands.PackageProcessor.execute(PackageProcessor.java:228)
+	at com.ibm.ws.kernel.boot.internal.commands.PackageCommand.packageServerRuntime(PackageCommand.java:291)
+	at com.ibm.ws.kernel.boot.internal.commands.PackageCommand.doPackage(PackageCommand.java:125)
+	at com.ibm.ws.kernel.boot.Launcher.handleActions(Launcher.java:274)
+	at com.ibm.ws.kernel.boot.Launcher.createPlatform(Launcher.java:117)
+	at com.ibm.ws.kernel.boot.cmdline.EnvCheck.main(EnvCheck.java:59)
+	at com.ibm.ws.kernel.boot.cmdline.EnvCheck.main(EnvCheck.java:35)
+
+arg0=--batch-file=--package
+arg1=package
+arg2=defaultServer
+arg3=--archive=C:\Users\rninganz\MyCourses\Cloud_Native_Dev\02_03\begin\target\defaultServer.tar.gz
+arg4=--include=usr
+exit=25
+
+                 Java home:  C:\Program Files\Java\jdk-11.0.14
+              Install root:  C:/Users/rninganz/MyCourses/Cloud_Native_Dev/02_03/begin/target/liberty/wlp/
+          System libraries:  C:/Users/rninganz/MyCourses/Cloud_Native_Dev/02_03/begin/target/liberty/wlp/lib/
+                 User root:  C:/Users/rninganz/MyCourses/Cloud_Native_Dev/02_03/begin/target/liberty/wlp/usr/
+                    Config:  C:/Users/rninganz/MyCourses/Cloud_Native_Dev/02_03/begin/target/liberty/wlp/usr/servers/defaultServer/
+                    Output:  C:/Users/rninganz/MyCourses/Cloud_Native_Dev/02_03/begin/target/liberty-alt-output-dir/defaultServer/
+

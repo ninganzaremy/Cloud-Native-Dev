@@ -1,0 +1,10 @@
+********************************************************************************
+product = Open Liberty 19.0.0.4 (wlp-1.0.27.cl190420190419-0642)
+wlp.install.dir = C:/Users/rninganz/MyCourses/Cloud_Native_Dev/02_03/begin/target/liberty/wlp/
+java.home = C:\Program Files\Java\jdk-11.0.14
+java.version = 11.0.14
+java.runtime = Java(TM) SE Runtime Environment (11.0.14+8-LTS-263)
+os = Windows 10 (10.0; amd64) (en_US)
+process = 23256@ESAdm-FJ590Z2
+********************************************************************************
+[2/4/22, 9:42:15:320 MST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
